@@ -39,12 +39,12 @@ probability = model.predict_proba(scaled_input)[0][1]
 # DISPLAY RESULT
 
 st.markdown("---")
-st.subheader("🔍 Prediction Result")
+st.subheader(" Prediction Result")
 
 if prediction == 1:
-    st.error(f"⚠️ **High Risk of Heart Disease Detected!**\n\nProbability: **{probability:.2f}**")
+    st.error(f" **High Risk of Heart Disease Detected!**\n\nProbability: **{probability:.2f}**")
 else:
-    st.success(f"✅ **No Heart Disease Detected.**\n\nProbability: **{probability:.2f}**")
+    st.success(f" **No Heart Disease Detected.**\n\nProbability: **{probability:.2f}**")
 
 st.markdown("---")
 st.caption("This prediction is based on your entered data and a trained Logistic Regression model.")
